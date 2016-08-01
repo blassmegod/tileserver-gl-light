@@ -8,6 +8,11 @@ var opts = require('nomnom')
     position: 0,
     help: "MBTiles path"
   })
+  .option('bind', {
+    abbr: 'b',
+    default: "::",
+    help: 'Bind address'
+  })
   .option('port', {
     abbr: 'p',
     default: 8080,
@@ -24,6 +29,7 @@ var opts = require('nomnom')
 
 return require('../src/server')({
   installationPath: path.dirname(path.dirname(module.filename)),
+  bind: opts.bind,
   port: opts.port,
   mbtilesFile: opts.mbtiles
 });
