@@ -4,6 +4,9 @@ A trimmed down fork of [tileserver-gl](https://github.com/klokantech/tileserver-
 predefined Mapbox GL styles.
 Built to support serving vectortiles from [OSM2VectorTiles](http://osm2vectortiles.org/).
 
+This trimmed tileserver is merely for demonstration purposes. We recommend [tileserver-gl](https://github.com/klokantech/tileserver-gl)
+for production usage.
+
 ## Get Started
 
 Install `tileserver-gl-light` from npm.
@@ -23,12 +26,6 @@ Start `tileserver-gl-light` with the downloaded vector tiles.
 ```bash
 tileserver-gl-light zurich_switzerland.mbtiles
 ```
-
-## More Information
-
-This trimmed tileserver is merely for demonstration purposes.
-We recommend [tileserver-gl](https://github.com/klokantech/tileserver-gl)
-for production usage.
 
 ## Style and Glyphs Copyright
 
